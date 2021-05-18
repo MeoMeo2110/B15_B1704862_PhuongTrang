@@ -29,17 +29,14 @@ public class MainActivity extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         edtUrl1 = findViewById(R.id.nhapurl);
         edtUrl2 = findViewById(R.id.nhapurl2);
         tvLoadimg = findViewById(R.id.tvLoadimg);
         tvLoadtext = findViewById(R.id.tvLoadtext);
-
         String URL = "https://tse3.mm.bing.net/th?id=OIP.-sRPpGMNfmGOhw_lxYXOmQHaEK&pid=Api&P=0&w=280&h=158";
         String URL2 = "https://thuthuat.taimienphi.vn/huong-dan-cach-cai-dat-cau-hinh-va-su-dung-xampp-36056n.aspx";
         edtUrl1.setText(URL);
         edtUrl2.setText(URL2);
-
         tvLoadimg.setOnClickListener(new View.OnClickListener()
         {
             @Override
