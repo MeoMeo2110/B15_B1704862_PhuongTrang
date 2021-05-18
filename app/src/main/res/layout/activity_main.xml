@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/nhapurl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập vào URL để tải ảnh"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="DOWNLOAD THE IMAGE"
+        android:textColor="#f0f"
+        android:background="#CCDBCC"
+        android:padding="5dp"
+        android:gravity="center"
+        android:id="@+id/tvLoadimg" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#00f"
+        android:text="Image has been loaded"
+        android:id="@+id/tvURLimg" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/img"
+        android:layout_gravity="center_vertical"
+        android:contentDescription="img1"
+        android:layout_weight="1" />
+
+    <EditText
+        android:id="@+id/nhapurl2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập vào URL để tải văn bản"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="DOWNLOAD THE TEXT"
+        android:background="#CCDBCC"
+        android:textColor="#f0f"
+        android:padding="5dp"
+        android:gravity="center"
+        android:id="@+id/tvLoadtext" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Text has been loaded"
+        android:textColor="#00f"
+        android:id="@+id/tvURLtext" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="20sp"
+        android:scrollbarStyle="insideInset"/>
+</LinearLayout>
